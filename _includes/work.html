@@ -1,0 +1,8 @@
+<div class="work">
+    {{ content }}
+
+    {% for employ in site.employment %}
+    	{{ employ.jobtitle }}{{ employ.institution }}
+    	{{ employ.content }}
+    {% endfor %}
+</div>

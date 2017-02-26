@@ -1,5 +1,5 @@
 ---
-layout: education
+layout: cv
 from: 2001
 to: 2006
 title: MSc in Advanced Computer Science

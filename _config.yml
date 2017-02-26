@@ -2,6 +2,7 @@ markdown:   kramdown
 
 collections:
   education:
-    output: true
+    output: false
   employment:
-    output: true
+    output: false
+
