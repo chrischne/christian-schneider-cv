@@ -1,1 +1,7 @@
 markdown:   kramdown
+
+collections:
+  education:
+    output: true
+  employment:
+    output: true
