@@ -1,8 +1,11 @@
 <div id="education" class="chronology">
-    {{ content }}
-
     {% for e in site.education %}
+    <div class="entry">
     	<div class="time">{{ e.from }} - {{ e.to }}</div>
-    	<div class="description">description here</div>
+    	<div class="title">{{ e.title }}</div>
+    	<div class="institution">{{ e.institution }}</div>
+    	<div class="description">{{ e.content }}</div>
+    </div>
     {% endfor %}
 </div>
+

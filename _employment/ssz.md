@@ -2,7 +2,7 @@
 layout: cv
 from: 2001
 to: 2006
-jobtitle: Research Assistant
+position: Research Assistant
 institution: Statistik Stadt Zürich
 location: Switzerland
 ---

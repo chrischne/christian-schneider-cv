@@ -2,25 +2,24 @@
 <html>
 <head>
   <meta charset=utf-8 />
-  <title> Ben Moore's CV</title>
+  <title>Christian Schneider CV</title>
+    <link href="css/reset.css" type="text/css" rel="stylesheet" media="screen">
   <link href="css/cv-screen.css" type="text/css" rel="stylesheet" media="screen">
-  <link href="css/cv-print.css" type="text/css" rel="stylesheet" media="print">
-
-  <!-- imports -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <!--<link href="css/cv-print.css" type="text/css" rel="stylesheet" media="print">-->
 </head>
 <body>
-  <div id="main">
-    <div id="content">
-    {% include photo.html %}
-    {% include header.html %}
-    {% include education.html %}
-    {% include work.html %}
-    </div>
-  </div>
 
-  <div class="footer"></div>
+    <div id="main">
+      <div id="content">
+      {% include photo.html %}
+      {% include header.html %}
+
+      <div id="cv-listing">
+      {% include education.html %}
+      {% include work.html %}
+      </div>
+      </div>
+    </div>
 
 </body>
 </html>
