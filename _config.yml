@@ -15,4 +15,6 @@ collections:
     output: false
   employment:
     output: false
+  teaching:
+    output: false
 
