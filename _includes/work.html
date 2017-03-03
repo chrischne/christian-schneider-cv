@@ -1,27 +1,16 @@
 <div id="work" class="chronology">
+    <div class="title">Employement</div>
     {% for e in site.employment %}
     <div class="entry">
-    	<div class="time">{{ e.from }} - {{ e.to }}</div>
-    	<div class="title">{{ e.title }}</div>
-    	<div class="institution">{{ e.institution }}{{ e.location }}</div>
-    	<div class="position">{{ e.position }}</div>
+    	<div class="entry-left">
+    		<div class="time">{{ e.from }} - {{ e.to }}</div>
+    	</div>
+    	<div class="entry-right">
+    		<div class="title">{{ e.title }}</div>
+    		<div class="institution">{{ e.institution }}{{ e.location }}</div>
+    		<div class="position">{{ e.position }}</div>
+    		<div class="description">{{ e.content }}</div>
+    	</div>
     </div>
     {% endfor %}
 </div>
-
-
-Statistik Stadt Zürich, Switzerland
-Research Assistant
-Introducing Interactive Datavisualisations for Web as Project Leader and Software Architect
-Collaboration / support of educational projects
-Assistance Project Leader, Concept, Design and Realisation for Exhibition Dada x Statistik
-Designed and Implemented a Visualisation Frontend for Bevölkerungsszenarien Stadt Zürich
-Designed and implemented static, dynamic and interactive Datavisualisations for Print and Web
-
-
-layout: cv
-from: 2001
-to: 2006
-position: Research Assistant
-institution: Statistik Stadt Zürich
-location: Switzerland

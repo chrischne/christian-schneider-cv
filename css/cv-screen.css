@@ -1,11 +1,25 @@
-210x297
+@font-face {
+    font-family: aauxprothin;
+    src: url(../font/AauxProOTThin.otf);
+}
+
+@font-face {
+    font-family: aauxproregular;
+    src: url(../font/AauxProOTRegular.otf);
+}
+
+body {
+    font-family: aauxprothin;
+    font-size: 9pt;
+    line-height: 10.8pt;
+}
 
 div {
 	border: 1px solid black;
 }
 
 .title {
-	font-weight: bold;
+	font-family: aauxproregular;
 }
 
 
@@ -19,6 +33,19 @@ div {
 }
 .chronology {
 	border: 1px solid green;
+}
+
+.entry-left {
+	display: inline-block;
+	border: 1px solid red;
+	width: 30%;
+	vertical-align: top;
+}
+.entry-right {
+	width: 60%;
+	display: inline-block;
+	border: 1px solid green;
+	vertical-align: top;
 }
 
 #photo {
