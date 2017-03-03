@@ -1,9 +1,7 @@
 ---
 layout: cv
-from: 2001
-to: 2006
+from: 1995
+to: 2000
 title: Primary- and Secondary School Teaching Diploma
-institution: Teacher Training College
-location: Thun, Switzerland
+institution: Teacher Training College Thun (CH)
 ---
-
