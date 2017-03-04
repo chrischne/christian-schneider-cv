@@ -22,7 +22,7 @@ $content_top_margin: 78.75mm;
 $content_width: 117mm;
 
 $entry_left_width: 30%;
-$entry_right_width: 30%;
+$entry_right_width: 68%;
 
 $cellpadding: 0;
 $pgap: 4pt;
@@ -111,7 +111,17 @@ width: $content_width;
 }
 
 @page {
-    margin: 0;
+    margin-top: 10mm;
+    margin-bottom: 10mm;
+}
+
+#teaching {
+	border: 1px solid red;
+	page-break-before: always;
+}
+
+.page-break{
+	page-break-before: always;
 }
 
 
@@ -119,7 +129,19 @@ width: $content_width;
 
 @page {
     size: A4;
-    margin: 0;
+    margin-top: 10mm;
+    margin-bottom: 10mm;
+}
+
+.page-break	{ display: block; page-break-before: always; }
+
+#teaching {
+	border: 1px solid red;
+	page-break-before: always;
+}
+
+.chronology {
+	page-break-inside: avoid;
 }
 
 }
