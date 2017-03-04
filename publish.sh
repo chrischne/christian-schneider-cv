@@ -1,11 +1,9 @@
-# Example script to generate HTML and push to local gh-pages directory.
+#!/bin/bash
 
-#build site from markdown
-jekyll build
+#serve cv and open default browser 
+cd "$(dirname "$0")"
 
-# remove old files
-rm -R ../other/blmoore.github.io/cv/*
+#kill previous instances of jekyll serve
+killall ruby
 
-# re-add new
-cp _site/index.html ../other/blmoore.github.io/cv/.
-cp -R _site/media ../other/blmoore.github.io/cv/.
+jekyll serve & sleep 2 && open "http://localhost:4000"
