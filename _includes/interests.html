@@ -1,0 +1,8 @@
+<div id="interests" class="chronology">
+    <div class="title">Interests</div>
+    {% for interest in site.interests %}
+    <div class="entry">
+        {{ interest.content }}
+    </div>
+    {% endfor %}
+</div>

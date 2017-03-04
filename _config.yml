@@ -8,6 +8,8 @@ phone: +41 78 882 67 08
 email: chrischne@gmail.com
 website: www.christianschneider.ch 
 
+photo: img/photo2.jpg 
+
 markdown:   kramdown
 
 collections:
@@ -26,6 +28,8 @@ collections:
   computer_skills:
     output: false
   languages:
+    output: false
+  interests:
     output: false
 
 

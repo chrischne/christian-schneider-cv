@@ -19,7 +19,7 @@ body {
 }
 
 div {
-	/*border: 0.1px dotted lightgrey;*/
+	/*border: 0.1px solid lightgrey;*/
 }
 
 .title {
@@ -42,16 +42,24 @@ div {
 }
 .chronology {
 /*	border: 1px solid green;*/
+margin-bottom: 5mm;
+width: 117mm;
+}
+
+.entry {
+	margin-bottom:2mm;
 }
 
 .entry-left {
 	display: inline-block;
 /*	border: 1px solid red;*/
 	width: 30%;
+	/*width: 30.6mm;*/
 	vertical-align: top;
 }
 .entry-right {
-	width: 60%;
+	width: 69%;
+	/*width: 80mm;*/
 	display: inline-block;
 	/*border: 1px solid green;*/
 	vertical-align: top;
@@ -60,15 +68,21 @@ div {
 #photo {
 	/*border: 1px solid blue;*/
 	position: absolute;
-	left: 28mm;
-	top:42mm;
+	left: 27.6mm;
+	top:43.3mm;
+
+}
+
+#photo img {
+	
+	width: 38mm;
 }
 
 #header {
 	/*border: 1px solid yellow;*/
 	position: absolute;
 	left: 80mm;
-	top: 42mm;
+	top: 43.3mm;
 }
 
 #cv-listing {
