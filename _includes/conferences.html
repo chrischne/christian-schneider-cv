@@ -1,0 +1,13 @@
+<div id="teaching" class="chronology">
+    <div class="title">Conferences / Presentations</div>
+    {% for c in site.conferences %}
+    <div class="entry">
+    	<div class="entry-left">
+    		<div class="time">{{ c.year }}</div>
+    	</div>
+    	<div class="entry-right">
+    		{{ c.content }}
+    	</div>
+    </div>
+    {% endfor %}
+</div>

@@ -19,5 +19,14 @@ collections:
     output: false
   conferences:
     output: false
+  exhibitions:
+    output: false
+  miscellaneous:
+    output: false
+  computer_skills:
+    output: false
+  languages:
+    output: false
+
 
 

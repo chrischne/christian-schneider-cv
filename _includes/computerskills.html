@@ -1,0 +1,13 @@
+<div id="teaching" class="chronology">
+    <div class="title">Computer Skills</div>
+    {% for c in site.computer_skills %}
+    <div class="entry">
+    	<div class="entry-left">
+    		<div class="time">{{ c.category }}</div>
+    	</div>
+    	<div class="entry-right">
+    		{{ c.content }}
+    	</div>
+    </div>
+    {% endfor %}
+</div>

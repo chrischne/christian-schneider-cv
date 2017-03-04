@@ -1,0 +1,14 @@
+<div id="teaching" class="chronology">
+    <div class="title">Languages</div>
+    {% assign sorted_langues = site.languages | sort:"order" %}
+    {% for l in sorted_langues %}
+    <div class="entry">
+    	<div class="entry-left">
+    		<div class="time">{{ l.language }}</div>
+    	</div>
+    	<div class="entry-right">
+    		{{ l.level }}
+    	</div>
+    </div>
+    {% endfor %}
+</div>
