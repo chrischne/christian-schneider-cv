@@ -12,6 +12,9 @@ photo: img/photo2.jpg
 
 markdown:   kramdown
 
+sass:
+  style: compressed
+
 collections:
   education:
     output: false
