@@ -1,6 +1,6 @@
 ---
 layout: cv
-title: Ben Moore's CV
+title: CV Christian Schneider
 ---
 
 
