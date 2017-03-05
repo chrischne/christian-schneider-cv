@@ -1,6 +1,7 @@
 <div id="miscellaneous" class="chronology">
-    <div class="title">Miscellaneous</div>
-    {% for m in site.miscellaneous %}
+    <div class="section-title">Miscellaneous</div>
+    {% assign sorted = site.miscellaneous | sort:"year" | reverse %}
+    {% for m in sorted %}
     <div class="entry">
     	<div class="entry-left">
     		<div class="time">{{ m.year }}</div>

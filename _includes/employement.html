@@ -1,9 +1,16 @@
 <div id="employment" class="chronology">
-    <div class="title">Employement</div>
-    {% for e in site.employment %}
+    <div class="section-title">Employement</div>
+    {% assign sorted_employement = site.employment | sort:"to" | reverse %}
+    {% for e in sorted_employement %}
     <div class="entry">
     	<div class="entry-left">
-    		<div class="time">{{ e.from }} - {{ e.to }}</div>
+    		<div class="time">
+            {%  if e.from == e.to %}
+                 {{ e.from }}
+            {% else %}
+                {{ e.from }} - {{ e.to }}
+            {% endif %}
+            </div>
     	</div>
     	<div class="entry-right">
     		<div class="title">{{ e.institution }}</div>

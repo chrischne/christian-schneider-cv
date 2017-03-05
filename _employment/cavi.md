@@ -1,6 +1,6 @@
 ---
 layout: cv
-from: 
+from: 2006
 to: 2006
 position: Demo Application Designer
 institution: Centre for Advanced Visualization and Interaction (CAVI), Århus (DK)

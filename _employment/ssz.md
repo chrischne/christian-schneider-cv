@@ -1,7 +1,7 @@
 ---
 layout: cv
-from: 2001
-to: 2006
+from: 2012
+to: 2016
 position: Research Assistant | Data Visualisation Spezialist
 institution: Statistik Stadt Zürich
 location: Switzerland

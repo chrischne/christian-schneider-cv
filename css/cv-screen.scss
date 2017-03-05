@@ -28,12 +28,14 @@ $content_left_margin: 80.2mm;
 $content_top_margin: 0;/*78.75mm;*/
 $content_width: 117mm;
 
+$title_gap: 2mm;
+
 $entry_left_width: 30%;
 $entry_right_width: 68%;
 
 $cellpadding: 0;
-$pgap: 4pt;
-$section_gap: 5mm;
+$pgap: 2mm;
+$section_gap: 10mm;
 $entry_gap: 2mm;
 
 
@@ -79,6 +81,11 @@ div {
 	font-family: aauxproregular;
 }
 
+.section-title{
+	font-family: aauxproregular;
+		margin-bottom: $title_gap;
+}
+
 #main{
 	width: $a4width;
 	padding: 0;
@@ -107,6 +114,19 @@ width: $content_width;
 	display: inline-block;
 	vertical-align: top;
 }
+
+.entry-right .title {
+	/*margin-bottom: 1mm;*/
+}
+
+.entry-right .institution, .entry-right .position {
+	margin-bottom: 1mm;
+}
+
+.entry-right .description p {
+	margin-bottom: 1mm;
+}
+
 
 
 
