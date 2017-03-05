@@ -5,14 +5,18 @@
 @import 'reset';
 @import 'fonts';
 
-$debug: true;
+$debug: false;
 
 $font_size: 9pt;
 $line_height :10.8pt;
 
 $a4width: 210mm;
+$page_margin: 43mm;
 
-$margin_vertical: 32mm;
+$header_margin_left: 27.6mm;
+$header_margin_top: 0;
+
+$margin_vertical: 0mm;
 $margin_top: $margin_vertical;/*43.3mm;*/
 $margin_bottom: $margin_vertical;
 
@@ -21,7 +25,7 @@ $photo_margin_top: 0;
 $photo_width: 38mm;
 
 $content_left_margin: 80.2mm;
-$content_top_margin: 78.75mm;
+$content_top_margin: 0;/*78.75mm;*/
 $content_width: 117mm;
 
 $entry_left_width: 30%;
@@ -78,8 +82,9 @@ div {
 #main{
 	width: $a4width;
 	padding: 0;
-	margin-top: $margin_top;
-	margin-bottom: $margin_bottom;
+	margin: 0;
+	/*margin-top: $margin_top;
+	margin-bottom: $margin_bottom;*/
 	@include debugbackground($debug);
 }
 
@@ -107,9 +112,11 @@ width: $content_width;
 
 
 #header {
-	position: relative;
-	left: $content_left_margin;
-	top: $margin_top;
+	
+	/*left: $header_margin_left;
+	top: $header_margin_top;*/
+	padding-left: $header_margin_left;
+	
 
 	#photo {
 	    display: inline-block;
@@ -123,6 +130,7 @@ width: $content_width;
 		}
 	}
 	#info {
+		margin-left: 14.6mm;
 		display: inline-block;
 	}
 }
@@ -131,10 +139,19 @@ width: $content_width;
 
 
 #cv-listing {
-	position: relative;
+	/*position: relative;
 	left: $content_left_margin;
-	top: $content_top_margin;
+	top: $content_top_margin;*/
+
+	padding-left: $content_left_margin;
 	width: $content_width;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+    margin-top: $page_margin;
+    margin-bottom: $page_margin;
 }
 
 
@@ -146,12 +163,17 @@ width: $content_width;
 
 @page {
     size: A4;
-    margin-top: $margin_top;
-    margin-bottom: $margin_bottom;
+    margin: 0;
+    margin-top: $page_margin;
+    margin-bottom: $page_margin;
 }
 
 .chronology {
 	page-break-inside: avoid;
+}
+
+.chronology .title{
+	page-break-after: avoid;
 }
 
 }
