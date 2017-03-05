@@ -1,6 +1,7 @@
 <div id="education" class="chronology">
     <div class="section-title">Education</div>
-    {% for e in site.education %}
+    {% assign sorted = site.education | sort:"to" | reverse %}
+    {% for e in sorted %}
     <div class="entry">
     	<div class="entry-left">
     		<div class="time">{{ e.from }} - {{ e.to }}</div>
