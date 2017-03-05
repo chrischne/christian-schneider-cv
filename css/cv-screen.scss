@@ -30,12 +30,12 @@ $content_width: 117mm;
 
 $title_gap: 2mm;
 
-$entry_left_width: 30%;
-$entry_right_width: 68%;
+$entry_left_width: 25%;
+$entry_right_width: 73%;
 
 $cellpadding: 0;
 $pgap: 2mm;
-$section_gap: 10mm;
+$section_gap: 7mm;
 $entry_gap: 2mm;
 
 
@@ -65,7 +65,11 @@ $entry_gap: 2mm;
 
 
 body {
+
+	/*font-family: 'Roboto', sans-serif;*/
+
     font-family: aauxprothin;
+    /*font-weight: 300;*/
     font-size: $font_size;
     line-height: $line_height;
     margin: 0;
@@ -78,11 +82,13 @@ div {
 }
 
 .title {
-	font-family: aauxproregular;
+	/*font-family: aauxproregular;*/
 }
 
 .section-title{
 	font-family: aauxproregular;
+	/*font-family: 'Roboto', sans-serif;*/
+	/*font-weight: 300;*/
 		margin-bottom: $title_gap;
 }
 
@@ -123,7 +129,7 @@ width: $content_width;
 	margin-bottom: 1mm;
 }
 
-.entry-right .description p {
+.entry-right  p {
 	margin-bottom: 1mm;
 }
 
@@ -162,7 +168,7 @@ width: $content_width;
 	/*position: relative;
 	left: $content_left_margin;
 	top: $content_top_margin;*/
-
+	margin-top: -7mm;
 	padding-left: $content_left_margin;
 	width: $content_width;
 }
