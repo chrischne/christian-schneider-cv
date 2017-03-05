@@ -5,16 +5,19 @@
 @import 'reset';
 @import 'fonts';
 
-$showborders: false;
+$debug: true;
 
 $font_size: 9pt;
 $line_height :10.8pt;
 
 $a4width: 210mm;
 
-$top_margin: 43.3mm;
+$margin_vertical: 32mm;
+$margin_top: $margin_vertical;/*43.3mm;*/
+$margin_bottom: $margin_vertical;
 
-$photo_left_margin: 27.6mm;
+$photo_left_margin: 0;
+$photo_margin_top: 0;
 $photo_width: 38mm;
 
 $content_left_margin: 80.2mm;
@@ -42,6 +45,18 @@ $entry_gap: 2mm;
  
 }
 
+@mixin debugbackground($doshow) {
+
+	@if $doshow == true {
+
+   background-color: pink;
+
+  } @else {
+  	
+  }
+ 
+}
+
 
 body {
     font-family: aauxprothin;
@@ -53,7 +68,7 @@ body {
 
 div {
 	/*border: 0.1px solid lightgrey;*/
-	@include borders($showborders);
+	@include borders($debug);
 }
 
 .title {
@@ -62,8 +77,10 @@ div {
 
 #main{
 	width: $a4width;
-	margin: 0;
 	padding: 0;
+	margin-top: $margin_top;
+	margin-bottom: $margin_bottom;
+	@include debugbackground($debug);
 }
 
 .chronology {
@@ -86,58 +103,51 @@ width: $content_width;
 	vertical-align: top;
 }
 
-#photo {
-	position: absolute;
-	left: $photo_left_margin;
-	top: $top_margin;
 
-}
 
-#photo img {
-	width: $photo_width;
-}
 
 #header {
-	position: absolute;
+	position: relative;
 	left: $content_left_margin;
-	top: $top_margin;
+	top: $margin_top;
+
+	#photo {
+	    display: inline-block;
+	    position: relative;
+		left: $photo_left_margin;
+		top: $photo_margin_top;
+		vertical-align: top;
+
+		img {
+			width: $photo_width;
+		}
+	}
+	#info {
+		display: inline-block;
+	}
 }
 
+
+
+
 #cv-listing {
-	position: absolute;
+	position: relative;
 	left: $content_left_margin;
 	top: $content_top_margin;
 	width: $content_width;
 }
 
-@page {
-    margin-top: 10mm;
-    margin-bottom: 10mm;
-}
-
-#teaching {
-	border: 1px solid red;
-	page-break-before: always;
-}
-
-.page-break{
-	page-break-before: always;
-}
-
 
 @media print {
 
+	body{
+		-webkit-print-color-adjust: exact;
+	}
+
 @page {
     size: A4;
-    margin-top: 10mm;
-    margin-bottom: 10mm;
-}
-
-.page-break	{ display: block; page-break-before: always; }
-
-#teaching {
-	border: 1px solid red;
-	page-break-before: always;
+    margin-top: $margin_top;
+    margin-bottom: $margin_bottom;
 }
 
 .chronology {
