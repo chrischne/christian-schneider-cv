@@ -15,7 +15,7 @@ Concept, specification and project managment in development of a visualisation l
 
 Project Lead, concept, design, realisation and coordination of an exhibition "Dada x Statistik"
 
-Design and implementation of a visualisation Software for Population Scenarios
+Design and implementation of a visualisation software for Population Scenarios
 
 Design and implementation of interactive Charts
 
