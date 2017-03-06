@@ -7,16 +7,15 @@ institution: Statistics Office, City of Zurich
 location: Switzerland
 ---
 
-Introducing Interactive Datavisualisations for Web as Project Leader and Software Architect
+Responsible for the field "Data Visualisation" within the institution.
 
-Collaboration / support of educational projects
+Concept, specification and project managment in development of a visualisation library based on d3.js.
 
-Assistance Project Leader, Concept, Design and Realisation for Exhibition Dada x Statistik
+Project Lead, concept, design, realisation and coordination of an exhibition "Dada x Statistik"
 
-Designed and Implemented a Visualisation Frontend for Bevölkerungsszenarien Stadt Zürich
+Design and implementation of a visualisation Software for Population Scenarios.
 
-Designed and implemented static, dynamic and interactive Datavisualisations for Print and Web
+Design and implementation of interactive Charts.
 
-(add Project Managment somehow)
 
 
