@@ -6,6 +6,6 @@ position: Researcher and Teaching Assistant
 institution: Chair for Information Architecture, ETH Zurich (CH)
 ---
 
-Research and teaching in the areas of Data Visualisation, Computational Design, Parametric Urban Design + Simulation, Projection Mapping.
+Research and teaching in the areas of Data Visualisation, Computational Design, Parametric Urban Design + Simulation, Digital Fabrication and Projection Mapping.
 
 
