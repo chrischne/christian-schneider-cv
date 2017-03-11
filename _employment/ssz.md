@@ -17,7 +17,7 @@ Project Lead, concept, design, realisation and coordination of an exhibition.
 
 Design and implementation of a visualisation software for Population Scenarios
 
-Design and implementation of interactive Charts
+Design and implementation of interactive charts
 
 
 
