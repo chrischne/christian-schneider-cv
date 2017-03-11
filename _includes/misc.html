@@ -1,0 +1,23 @@
+<div id="miscellaneous" class="chronology">
+    <div class="section-title">Miscellaneous</div>
+    {% assign sorted = site.misc | sort:"to" | reverse %}
+    {% assign current_year = site.time | date: '%Y' %}
+    {% for m in sorted %}
+    <div class="entry">
+    	<div class="entry-left">
+    		<div class="time">
+            {% if m.from == m.to %}
+                {{ m.from }}
+            {% elsif current_year == m.to  %}
+                {{ m.from }} - 
+            {% else %}
+                {{ m.from }} - {{ m.to }}  
+            {% endif %}
+            </div>
+    	</div>
+    	<div class="entry-right">
+    		{{ m.content }}
+    	</div>
+    </div>
+    {% endfor %}
+</div>
