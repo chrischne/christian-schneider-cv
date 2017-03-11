@@ -1,7 +1,7 @@
 <div id="miscellaneous" class="chronology">
     <div class="section-title">Miscellaneous</div>
     {% assign sorted = site.misc | sort:"to" | reverse %}
-    {% assign current_year = site.time | date: '%Y' %}
+    {% assign current_year = 'now' | date: '%Y' | plus: 0  %}
     {% for m in sorted %}
     <div class="entry">
     	<div class="entry-left">

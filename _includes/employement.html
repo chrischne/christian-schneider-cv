@@ -1,18 +1,12 @@
 <div id="employment" class="chronology">
     <div class="section-title">Employement</div>
     {% assign sorted_employement = site.employment | sort:"to" | reverse %}
-    {% assign current_year = site.time | date: '%Y' %}
+    {% assign current_year = 'now' | date: '%Y' | plus: 0 %}
 
     {% for e in sorted_employement %}
     <div class="entry">
     	<div class="entry-left">
     		<div class="time">   
-            {% if current_year == e.to %}
-                current year equals {{ e.to }}
-            {% else %}
-                current year ( {{ current_year }}) does not equal {{ e.to }}
-            {% endif%}
-
             {% if e.from == e.to %}
                 {{ e.from }}
             {% elsif current_year == e.to  %}
