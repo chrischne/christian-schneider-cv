@@ -24,7 +24,7 @@ collections:
     output: false
   exhibitions:
     output: false
-  miscellaneous:
+  misc:
     output: false
   computer_skills:
     output: false
