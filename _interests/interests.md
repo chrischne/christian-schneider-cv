@@ -2,7 +2,7 @@
 layout: cv
 ---
 
-Kite Surfing, Skiing, Travelling, Nature, Art, Psychology, Piano
+Kite Surfing, Skiing, Travelling, Nature, Psychology, Piano
 
 
 

@@ -1,6 +1,7 @@
 <div id="computerskills" class="chronology">
     <div class="section-title">Computer Skills</div>
-    {% for c in site.computer_skills %}
+     {% assign sorted_skills = site.computer_skills | sort:"order" %}
+    {% for c in sorted_skills %}
     <div class="entry">
     	<div class="entry-left">
     		<div class="time">{{ c.category }}</div>
