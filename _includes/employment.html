@@ -1,9 +1,9 @@
 <div id="employment" class="chronology">
-    <div class="section-title">Employement</div>
-    {% assign sorted_employement = site.employment | sort:"to" | reverse %}
+    <div class="section-title">Employment</div>
+    {% assign sorted_employment = site.employment | sort:"to" | reverse %}
     {% assign current_year = 'now' | date: '%Y' | plus: 0 %}
 
-    {% for e in sorted_employement %}
+    {% for e in sorted_employment %}
     <div class="entry">
     	<div class="entry-left">
     		<div class="time">   

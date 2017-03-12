@@ -13,7 +13,7 @@ $font_size: 9pt;
 $line_height :10.8pt;
 
 $a4width: 210mm;
-$page_margin: 25mm;/*43mm;*/
+$page_margin: 28mm;/*43mm;*/
 
 $header_margin_left: 20.6mm;
 $header_margin_top: 0;
@@ -25,6 +25,8 @@ $margin_bottom: $margin_vertical;
 $photo_left_margin: 0;
 $photo_margin_top: 0;
 $photo_width: 38mm;
+
+$listing_pullup: -12mm;
 
 $content_left_margin: $a4width - $a4width/$golden_section - 5mm;/*75mm;/*80.2mm;*/
 $content_top_margin: 0;/*78.75mm;*/
@@ -188,7 +190,7 @@ margin-bottom: $section_gap;
 	left: $content_left_margin;
 	top: $content_top_margin;*/
 	@include borders($debug,green);
-	margin-top: -10mm;
+	margin-top: $listing-pullup;
 	padding-left: $content_left_margin;
 	width: $content_width;
 }
