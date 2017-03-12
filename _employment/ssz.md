@@ -15,7 +15,7 @@ Concept, specification and project managment in development of a visualisation l
 
 Project Lead, concept, design, realisation and coordination of an exhibition.
 
-Design and implementation of a visualisation software for Population Scenarios
+Design and implementation of a visualisation software for population scenarios
 
 Design and implementation of interactive charts
 

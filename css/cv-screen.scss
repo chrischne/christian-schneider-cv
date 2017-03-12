@@ -7,6 +7,8 @@
 
 $debug: false;
 
+$golden_section: 1.618033988749895;
+
 $font_size: 9pt;
 $line_height :10.8pt;
 
@@ -24,14 +26,14 @@ $photo_left_margin: 0;
 $photo_margin_top: 0;
 $photo_width: 38mm;
 
-$content_left_margin: 80.2mm;
+$content_left_margin: $a4width - $a4width/$golden_section - 5mm;/*75mm;/*80.2mm;*/
 $content_top_margin: 0;/*78.75mm;*/
-$content_width: 117mm;
+$content_width: 127mm;/*117mm;*/
 
 $title_gap: 2mm;
 
-$entry_left_width: 25%;
-$entry_right_width: 73%;
+$entry_left_width: 20%;
+$entry_right_width: 78%;
 
 $cellpadding: 0;
 $pgap: 2mm;
