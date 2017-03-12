@@ -13,9 +13,9 @@ $font_size: 9pt;
 $line_height :10.8pt;
 
 $a4width: 210mm;
-$page_margin: 43mm;
+$page_margin: 25mm;/*43mm;*/
 
-$header_margin_left: 27.6mm;
+$header_margin_left: 20.6mm;
 $header_margin_top: 0;
 
 $margin_vertical: 0mm;
@@ -28,12 +28,13 @@ $photo_width: 38mm;
 
 $content_left_margin: $a4width - $a4width/$golden_section - 5mm;/*75mm;/*80.2mm;*/
 $content_top_margin: 0;/*78.75mm;*/
-$content_width: 127mm;/*117mm;*/
+$content_width: 120mm;/*117mm;*/
 
 $title_gap: 2mm;
 
-$entry_left_width: 20%;
-$entry_right_width: 78%;
+$entry_left_width: 18%;
+$entry_width_correction: 1.1%;
+$entry_right_width: 100% - $entry_left_width - $entry_width_correction;
 
 $cellpadding: 0;
 $pgap: 2mm;
@@ -41,11 +42,11 @@ $section_gap: 7mm;
 $entry_gap: 2mm;
 
 
-@mixin borders($doshow) {
+@mixin borders($doshow,$color) {
 
 	@if $doshow == true {
 
-   border: 0.1px solid lightgrey;
+   border: 0.1px solid $color;
 
   } @else {
   	
@@ -80,7 +81,7 @@ body {
 
 div {
 	/*border: 0.1px solid lightgrey;*/
-	@include borders($debug);
+	@include borders($debug,black);
 }
 
 .title {
@@ -105,22 +106,29 @@ div {
 
 .chronology {
 margin-bottom: $section_gap;
-width: $content_width;
+/*width: $content_width;*/
+@include borders($debug,yellow);
 }
 
 .entry {
+	margin: 0;
 	margin-bottom: $entry_gap;
+	@include borders($debug,blue);
 }
 
 .entry-left {
+	margin: 0;
 	display: inline-block;
 	width: $entry_left_width;
 	vertical-align: top;
+	@include borders($debug,red);
 }
 .entry-right {
+	margin: 0;
 	width: $entry_right_width;
 	display: inline-block;
 	vertical-align: top;
+	@include borders($debug,red);
 }
 
 .entry-right .title {
@@ -158,7 +166,7 @@ width: $content_width;
 		}
 	}
 	#info {
-		margin-left: 14.6mm;
+		margin-left: $content_left_margin - $header_margin_left - $photo_left_margin - $photo_width;
 		display: inline-block;
 	}
 }
@@ -179,7 +187,8 @@ width: $content_width;
 	/*position: relative;
 	left: $content_left_margin;
 	top: $content_top_margin;*/
-	margin-top: -7mm;
+	@include borders($debug,green);
+	margin-top: -10mm;
 	padding-left: $content_left_margin;
 	width: $content_width;
 }
