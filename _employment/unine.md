@@ -6,7 +6,7 @@ position: Java Developer
 institution: University of Neuchâtel (CH), Department of Plant Ecology 
 ---
 
-Developed a spatial simulation environment.
+Developed a spatial simulation environment
 
 
 
