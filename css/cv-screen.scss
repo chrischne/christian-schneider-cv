@@ -28,7 +28,8 @@ $photo_width: 38mm;
 
 $listing_pullup: -12mm;
 
-$content_left_margin: $a4width - $a4width/$golden_section - 5mm;/*75mm;/*80.2mm;*/
+$golden_correction: 10mm;
+$content_left_margin: $a4width - $a4width/$golden_section - $golden_correction;/*75mm;/*80.2mm;*/
 $content_top_margin: 0;/*78.75mm;*/
 $content_width: 120.5mm;/*117mm;*/
 
