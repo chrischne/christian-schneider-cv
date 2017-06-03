@@ -2,7 +2,7 @@
 layout: cv
 from: 2012
 to: 2016
-position: Research Assistant | Data Visualisation Spezialist
+position: Scientific Collaborator | Data Visualisation Spezialist
 institution: Statistics Office, City of Zurich (CH)
 location: Switzerland
 ---

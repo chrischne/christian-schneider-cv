@@ -3,6 +3,6 @@
 #serve cv and open default browser 
 cd "$(dirname "$0")"
 
-rm cv.pdf
+rm christian_schneider_cv.pdf
 
-jekyll build && sleep 3 && prince _site/index.html -o cv_christian_schneider.pdf && sleep 3 && open cv_christian_schneider.pdf
+jekyll build && sleep 3 && prince _site/index.html -o christian_schneider_cv.pdf && sleep 3 && open christian_schneider_cv.pdf
