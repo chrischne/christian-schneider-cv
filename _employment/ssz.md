@@ -9,9 +9,7 @@ location: Switzerland
 
 Responsible for the field <<Data Visualisation>>
 
-Member of the teams <<Innovation & Technology>> and <<Analytics>>
-
-Concept, specification and project managment in development of a visualisation library.
+Concept, specification and project managment in development of a data visualisation library.
 
 Project Lead, concept, design, realisation and coordination of an exhibition.
 
