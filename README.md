@@ -16,8 +16,9 @@ If you're setting this up on a new machine (or after 7 years!):
 
 1. **Install dependencies:**
    ```bash
-   bundle install
+   bundle install --path vendor/bundle
    ```
+   This installs gems locally to avoid requiring sudo/password with macOS system Ruby.
 
 2. **Install PrinceXML** (if not already installed):
    ```bash
@@ -74,7 +75,7 @@ Each CV section is a Jekyll collection stored in its own directory (e.g., `_empl
 ```bash
 bundle exec jekyll --version
 ```
-Should show Jekyll 3.8.x. If not, run `bundle install`.
+Should show Jekyll 3.8.x. If not, run `bundle install --path vendor/bundle`.
 
 **Prince not found?**
 ```bash
@@ -91,6 +92,7 @@ Should be 2.6+. Use a Ruby version manager if needed.
 ## Notes
 
 - Always use `bundle exec` to ensure correct Jekyll version
+- Gems are installed locally in `vendor/bundle/` (not committed to git)
 - PrinceXML free version adds a watermark (acceptable for personal CV)
 - This project uses Jekyll 3.8.x (from 2019) - still works great!
 - See `CLAUDE.md` for detailed architecture documentation
