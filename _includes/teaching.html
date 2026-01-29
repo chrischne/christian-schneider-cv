@@ -1,10 +1,20 @@
 <div id="teaching" class="chronology">
     <div class="section-title">Teaching</div>
-    {% assign sorted_teaching = site.teaching | sort:"year" | reverse %}
+    {% assign sorted_teaching = site.teaching | sort:"to" | reverse %}
+    {% assign current_year = 'now' | date: '%Y' | plus: 0 %}
+
     {% for t in sorted_teaching %}
     <div class="entry">
     	<div class="entry-left">
-    		<div class="time">{{ t.year }}</div>
+    		<div class="time">
+            {% if t.from == t.to %}
+                {{ t.from }}
+            {% elsif current_year == t.to  %}
+                {{ t.from }} -
+            {% else %}
+                {{ t.from }} - {{ t.to }}
+            {% endif %}
+            </div>
     	</div>
     	<div class="entry-right">
     		{{ t.content }}

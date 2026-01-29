@@ -1,4 +1,4 @@
-HSLU DDA
+HSLU Data Design + Art
 2020 Think 1 
 2021 Think 1
 2022 Think 1
@@ -59,5 +59,14 @@ HKB CAS Generative Data Design
 2025
 
 
-New Design University St. Pölten 
+NDU (AT)
 2023 Wahlfach Creative Coding
+
+
+---
+
+TODO: Consider restructuring the teaching section by institution (similar to
+how employment is structured in _employment/), grouping courses under their
+institution rather than listing each course individually sorted by date.
+The current flat list is getting long, and many courses belong to the same
+institution (e.g. 3 courses at HSLU, 2 at BFH, 2 at HKB).
