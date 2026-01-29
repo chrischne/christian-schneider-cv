@@ -74,8 +74,9 @@ body {
 
 	/*font-family: 'Roboto', sans-serif;*/
 
-    font-family: aauxprothin;
-    /*font-weight: 300;*/
+    /* font-family: aauxprothin; */
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 400;
     font-size: $font_size;
     line-height: $line_height;
     margin: 0;
@@ -92,9 +93,10 @@ div {
 }
 
 .section-title{
-	font-family: aauxproregular;
+	/* font-family: aauxproregular; */
+	font-family: "neue-haas-grotesk-text", sans-serif;
+	font-weight: 700;
 	/*font-family: 'Roboto', sans-serif;*/
-	/*font-weight: 300;*/
 		margin-bottom: $title_gap;
 }
 
